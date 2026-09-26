@@ -1,4 +1,4 @@
-# Classification Models — Iris Flower Classification
+# Classification Models
 
 A comparison of three classic classification algorithms — Decision Tree, Logistic Regression (with cross-validation), and Support Vector Classifier — on the classic Iris flower dataset, plus a hyperparameter tuning pass on the best-performing model.
 

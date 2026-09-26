@@ -56,9 +56,3 @@ pip install scikit-learn
    ```
 2. The Iris dataset loads directly from scikit-learn — no external data files needed.
 3. Run the cells in order to reproduce model training, evaluation, and tuning.
-
-## Notes & Limitations
-
-* The 50/50 train/test split is unusually large for the test set — with only 150 samples total, this leaves just 75 training examples, which makes results more sensitive to the specific split (`random_state=0`) than a more typical 70/30 or 80/20 split would be.
-* Hyperparameter tuning did not improve on the default Decision Tree here, likely because the dataset is small and simple enough that the default settings already fit it well — the tuned model's cross-validated training score was similar, but it happened to generalize slightly worse on this particular test split.
-* No k-fold cross-validation is used for the final model comparison (aside from `LogisticRegressionCV`'s internal CV) — a single train/test split means the reported scores could shift somewhat with a different `random_state`.
